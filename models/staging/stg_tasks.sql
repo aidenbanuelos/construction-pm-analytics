@@ -1,6 +1,6 @@
 -- models/staging/stg_tasks.sql
 --
--- Staging model for construction.tasks (raw BigQuery table).
+-- Staging model for construction.tasks 
 -- Job: type-cast and standardize only. No business logic, no filtering,
 -- no aggregation — that belongs in mart models downstream.
 
