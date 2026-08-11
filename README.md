@@ -13,6 +13,7 @@ COVID caused a real, verifiable disruption and recovery surge in field activity.
 
 ## Finding 1 — Field activity nearly stopped during Ireland's COVID lockdown, then surged once it reopened
 
+<img width="1500" height="750" alt="Monthly Volume Chart" src="https://github.com/user-attachments/assets/f47a455a-fe50-4bf5-abeb-0373be6c9e98" />
 
 
 In March 2020, workers were logging almost 1,000 inspection/safety/quality tasks a month. Then Ireland shut down construction sites nationwide starting March 28th. In April, that number crashed to 355 — a 63% drop, basically the site went quiet. Once things reopened in May, activity didn't just recover, it exploded — by June, teams were logging over 1,700 tasks a month, nearly double what was normal before COVID. In plain terms: the shutdown created a backlog of catch-up work, and once crews were back, they were scrambling to make up for lost time.
@@ -22,6 +23,7 @@ In March 2020, workers were logging almost 1,000 inspection/safety/quality tasks
 
 ## Finding 2 — Most "safety issues" on this project aren't actually issues
 
+<img width="900" height="900" alt="Safety Composition Chart" src="https://github.com/user-attachments/assets/eaf756ca-c543-42fd-94a4-2f6bd2cb6136" />
 
 
 71% of everything logged in this system falls under "Safety." Sounds alarming at first. But dig one level deeper: of those 8,884 safety entries, 3,343 of them (37.6%) are labeled "Good Observation" — meaning someone saw a worker doing something right (wearing the right gear, following procedure correctly) and logged it as a positive note, not a problem. So a little over a third of "safety issues" are actually compliments, not complaints. If you only looked at the raw count, you'd wrongly conclude the site is dangerous when it's actually well monitored.
@@ -31,6 +33,7 @@ In March 2020, workers were logging almost 1,000 inspection/safety/quality tasks
 
 ## Finding 3 — Most open issues get closed fast, but a real chunk is stuck for months
 
+<img width="1200" height="750" alt="Backlog Aging Chart" src="https://github.com/user-attachments/assets/07199aa5-ee47-4308-95e1-9bda5ee12c0f" />
 
 
 Of everything still open, half (742 tasks) are less than 30 days old, a normal, healthy turnaround. But 294 tasks (about 1 in 5 open items) have been sitting unresolved for over 90 days. Some go back over a year. That's the difference between "business as usual" and "things are falling through the cracks." A healthy project has some backlog; a concerning one has a growing pile of stuff nobody's closing out.
@@ -40,6 +43,7 @@ Of everything still open, half (742 tasks) are less than 30 days old, a normal, 
 
 ## Finding 4 — One contractor owns most of the old, stuck problems — but there's a bigger issue hiding underneath
 
+<img width="1350" height="825" alt="Backlog by Package Chart" src="https://github.com/user-attachments/assets/594cd6da-4d19-47ba-8270-96277650a8b0" />
 
 
 Of those 294 old, unresolved tasks, 100 of them (about a third) belong to a single group: the Main Contractor. That's the headline. But two things caught while checking the data are honestly more interesting:
