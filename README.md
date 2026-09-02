@@ -16,7 +16,7 @@ COVID caused a real disruption and recovery surge in field activity. The apparen
 <img width="1500" height="750" alt="Monthly Volume Chart" src="https://github.com/user-attachments/assets/f47a455a-fe50-4bf5-abeb-0373be6c9e98" />
 
 
-In March 2020, workers were logging almost 1,000 inspection/safety/quality tasks a month. Then Ireland shut down construction sites nationwide starting March 28th. In April, that number crashed to 355, a 63% drop, basically the site went quiet. Once things reopened in May, activity didn't just recover, it exploded and by June, teams were logging over 1,700 tasks a month, nearly double what was normal before COVID. The shutdown created a backlog of catch-up work, and once crews were back, they were scrambling to make up for lost time.
+In March 2020, workers were logging almost 1,000 inspection/safety/quality tasks a month. Then Ireland shut down construction sites nationwide starting March 28th. In April, that number crashed to 355, a 63% drop, basically the site went quiet. Once things reopened in May, activity didn't just recover, it exploded and by June, teams were logging over 1,700 tasks a month, nearly double what was normal before COVID. The shutdown created a backlog of catch-up work.
 
 *Model: [`mart_monthly_volume.sql`](models/marts/mart_monthly_volume.sql)*
 
@@ -49,14 +49,14 @@ Of everything still open, half (742 tasks) are less than 30 days old, a normal a
 Of those 294 old, unresolved tasks, 100 of them (about a third) belong to a single group: the Main Contractor. That's the headline. But two things caught while checking the data are honestly more interesting:
 
 - **29 of those old, stuck tasks have no trade assigned to them at all** and nobody's name is on them. That's arguably worse than any single slow contractor, there's no accountability path at all for almost 30 chronically unresolved problems.
-- **The exact same trade (partitions and ceiling work) was logged under three different names** by different people filling out the field app — "Internal Partitions & Ceilings," "Ceilings & Partitions," and "Partitions & Ceilings." Until you catch that and combine them, it looks like three small, unremarkable trades. Combined, it's actually a top-6 problem area. If you hadn't asked about it, that would've stayed invisible.
+- **The exact same trade (partitions and ceiling work) was logged under three different names** by different people filling out the field app  "Internal Partitions & Ceilings," "Ceilings & Partitions," and "Partitions & Ceilings." Until you catch that and combine them, it looks like three small, unremarkable trades. Combined, it's actually a top 6 problem area. If you hadn't asked about it, that would've stayed invisible.
 
 *Model: [`mart_backlog_by_package.sql`](models/marts/mart_backlog_by_package.sql)*
 
 
 ## Data quality notes
 
-Real field-app exports aren't clean, and treating them as clean produces wrong conclusions. Issues found and handled in the staging layer ([`stg_tasks.sql`](models/staging/stg_tasks.sql)):
+Issues found and handled in the staging layer ([`stg_tasks.sql`](models/staging/stg_tasks.sql)):
 
 - **`Target` was an Excel serial date, not a real date.** Stored as raw day-counts since 1899-12-30 (Excel's internal date format), not a proper date type. 
 - **`Priority` mixed three unrelated concepts in one column** , actual priority level (High/Medium/Low), safety incident classification (Behavioural/System Failure), and planning lookahead tags. Split into separate typed columns.
